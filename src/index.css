@@ -1,0 +1,90 @@
+:root {
+    --main-color: #1abc9c;
+    --second-color: #2c3e50;
+  }
+
+  .bg-body-tertiary, .cards {
+    background-color: var(--second-color) !important;
+  }
+  body{
+    color: #fff ;
+  }
+  a {
+    color: #fff !important;
+  }
+  .navbar-nav .nav-link{
+    width: fit-content;
+    text-transform: uppercase;
+  }
+  .navbar-nav .nav-link.active {
+    background-color: var(--main-color);
+    border-radius: 10px;
+  }
+  .nav-padding{
+    padding-block: 1.3rem;
+  }
+  .navbar{
+    --bs-navbar-brand-padding-y: .45rem;
+    transition: .4s all ease-in-out;
+  }
+  .copyRights{
+    background-color: #1a252f;
+  }
+  .home,
+  .about{
+    min-height: inherit;
+    background-color: var(--main-color);
+  }
+  
+  .portfolio, .contact{
+    min-height: inherit;
+    color: var(--second-color);
+  }
+  .portfolio .line,
+  .contact .line{
+    background-color: var(--second-color);
+  }
+  .line{
+    height: 4px;
+    width: 80px;
+  }
+  .outletContainer{
+    margin-top: 92px;
+    min-height: calc(100vh - 110px);
+  }
+  .portfolio .layer{
+    background-color: #1abc9ce6;
+    cursor: pointer;
+    opacity: 0;
+    transition: .6s opacity;
+  }
+  .portfolio .img:hover .layer{
+    opacity: .9;
+  }
+  .contact .form-control {
+    outline: none;
+  }
+  .contact .myBtn{
+    background-color: var(--main-color);
+    outline: none;
+    border: none;
+  }
+  .contact input{
+    position: relative;
+  }
+  .contact input:focus{
+    outline: none;
+  }
+  .contact label{
+    position: absolute;
+    top: 0;
+    color: var(--main-color);
+    left: 0;
+    transform: translate(0, -1px);
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+  }
+  .contact input:focus + label{
+    visibility: visible;
+    transform: translate(0, -12px);
+  }
